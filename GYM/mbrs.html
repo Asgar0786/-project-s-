@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Signup Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #eda3f5; padding: 20px;">
+    
+    <h1 style="text-align: center; color: #fc0303;">JOIN OUR MEMBERSHIP PROGRAM</h1>
+    <h4 style="text-align: center; color: #1b40fc;">Become a part of our community and enjoy exclusive benefits.</h4>
+
+    <div style="max-width: 600px; margin: 0 auto; background-color: #31edc8; padding: 60px; border-radius: 10px; box-shadow: 5 5 10px rgba(0, 0, 0, 0.1);">
+        
+        <form action="#" method="post" name="google-sheet">
+            <label for="name" style="font-weight: bold;">Full Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #1439cb;"><br>
+
+            <label for="email" style="font-weight: bold;">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #461ed8;"><br>
+
+            <label for="membership-type" style="font-weight: bold;">Membership Type:</label><br>
+            <select id="membership-type" name="membership_type" required 
+                    style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #1832dc; box-sizing: content-box;">
+                <option value="basic">Basic - Free</option>
+                <option value="premium">Premium - $49/year</option>
+                <option value="vip">VIP - $99/year</option>
+            </select><br>
+
+            <label for="dob" style="font-weight: bold;">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required 
+                   style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #1010e1;"><br>
+
+            <label for="terms" style="font-weight: bold;">
+                <input type="checkbox" id="terms" name="terms" required>
+                I agree to the terms and conditions
+            </label><br><br>
+
+            <style>
+                .button {
+                  background: linear-gradient(90deg, #26ef58, #ee7455);
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 25px;
+                  cursor: pointer;
+                  transition: transform 0.3s;
+                }
+            
+                .button:hover {
+                  transform: scale(1.1);
+                }
+              </style>
+              <style>
+                .reset {
+                  background: linear-gradient(90deg, #26ef58, #ee7455);
+                  color: white;
+                  padding: 10px 20px;
+                  border: none;
+                  border-radius: 25px;
+                  cursor: pointer;
+                  transition: transform 0.3s;
+                }
+            
+                .reset:hover {
+                  transform: scale(1.1);
+                }
+              </style>
+            </head>
+            <body>
+            
+              <button class="button">Submit</button>
+              <button type="reset" class="reset">Reset</button>
+        </form>
+    </div>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxd6bTXM5Dje8pPwnXzic5fXi_YvNQjPNypWE90A_MeAxAUmfkqP0ObSOKl2JUk1CrE/exec'
+      const form = document.forms['google-sheet']
+    
+      form.addEventListener('Submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+
+
+</body>
+</html>
