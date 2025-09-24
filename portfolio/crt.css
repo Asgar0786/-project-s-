@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #f0f8ff, #e6f7ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+h1 {
+  text-align: center;
+  color: #004d66;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  background: #d1ecf1;
+  padding: 1rem 2rem;
+  border: 2px solid #007acc;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certificate {
+  background: #ffffff;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  border: 3px solid #007acc;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate:hover {
+  transform: scale(1.03);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+}
+
+.certificate img {
+  width: 100%;
+  display: block;
+  border-bottom: 4px solid #007acc;
+}
+
+footer {
+  margin-top: 2rem;
+  color: #555;
+  font-size: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  width: 100%;
+  text-align: center;
+  background: #e0f7fa;
+}

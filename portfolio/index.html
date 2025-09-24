@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Website</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Asgar Abbas</a>
+
+    <nav id="navLinks">
+      <a href="#" class="active">Home</a>
+      <a href="service.html">Services</a>
+      <a href="skill.html">Skills</a>
+      <a href="edu.html">Education</a>
+      <a href="crt.html">Certificate</a>
+      <a href="project.html">Project's</a>
+    </nav>
+
+    <div class="menu-icon" id="menuIcon">&#9776;</div>
+  </header>
+
+  <section class="home">
+    <div class="home-img">
+      <img src="kashaf.jpg" alt="Asgar Abbas Image" />
+    </div>
+    <div class="home-content">
+      <h1>Hi, It's <span>Asgar</span></h1>
+      <h3 class="typing-text">I'm a <span></span></h3>
+      <p>
+        Hi, I’m Asgar Abbas, a passionate and creative web developer. I specialize in frontend development, and I enjoy building clean, responsive, and user-friendly websites. My core skills include HTML, CSS, and JavaScript, and I also have experience with Python, Java, C++, and R programming. Along with frontend, I have a basic understanding of backend development as well. I'm always eager to learn new technologies and grow as a well-rounded developer who can build complete and efficient digital solutions.
+      </p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/asgar-abbas-bb011b28a/?trk=public-profile-join-page"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Asgar0786"><i class="fa-brands fa-github"></i></a>
+        <a href="https://wa.me/8252488640"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/_kashaf__07?igsh=MTRnMDZxanozaTJ6dg=="><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <a href="https://wa.me/8252488640" class="btn" target="_blank">Contact me</a>
+      <a href="cv asgar.pdf" class="btn">My resume</a>
+    </div>
+  </section>
+
+  <script>
+    const menuIcon = document.getElementById("menuIcon");
+    const navLinks = document.getElementById("navLinks");
+
+    menuIcon.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

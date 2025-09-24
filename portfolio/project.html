@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project's</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0e0e0;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    padding: 2rem 1rem 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-weight: 700;
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 12px #4deeea;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto 4rem;
+    padding: 0 1rem;
+  }
+
+  .project {
+    background: rgba(255 255 255 / 0.05);
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 1.75rem 1.5rem;
+    box-shadow: 0 0 12px #3ac6cc;
+    animation: floatUp 1.2s ease forwards;
+  }
+
+  .project:nth-child(odd) {
+    flex-direction: row-reverse;
+    box-shadow: 0 0 12px #d94c4c;
+  }
+
+  @keyframes floatUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .project img {
+    width: 160px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #0ff, inset 0 0 5px #0ff;
+    flex-shrink: 0;
+  }
+
+  .project-info {
+    flex: 1 1 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4cf1f9;
+    text-shadow: 0 0 8px #4cf1f9;
+    margin: 0;
+  }
+
+  .project-tech {
+    font-weight: 700;
+    font-style: italic;
+    color: #a0fff9;
+    margin-bottom: 0.7rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #d3f3f6;
+    text-shadow: 0 0 6px #117a87;
+  }
+
+  /* Hover/glow effect */
+  .project:hover {
+    background: rgba(79 226 246 / 0.15);
+    box-shadow: 0 0 25px #4fe2f6, inset 0 0 10px #4fe2f6;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+
+  /* Responsive */
+  @media (max-width: 680px) {
+    .project {
+      flex-direction: column !important;
+      text-align: center;
+    }
+    .project img {
+      width: 80vw;
+      height: auto;
+      max-height: 180px;
+    }
+    .project-info {
+      flex-basis: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Project's</header>
+
+<div class="container">
+  <div class="project" style="animation-delay: 0ms;">
+    <img src="frontend 1st website.png" 
+         alt="Screenshot of a simple website made using HTML and CSS showing a clean design with navigation" 
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">My First Website</h2>
+      <div class="project-tech">language used: HTML, CSS</div>
+      <p class="project-description">
+        A beginner's website created with HTML and CSS to demonstrate basic webpage structure and styling.
+        It includes responsive layouts and simple navigation elements.
+      </p>
+    </div>
+  </div>
+
+  <div class="project" style="animation-delay: 150ms;">
+    <img src="AI chatbot.png" 
+         alt="User interface of a chatbot built with HTML, CSS, and Java displaying chat bubbles in a dark theme design"
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">Chatbot Project</h2>
+      <div class="project-tech">language used: HTML, CSS, Java</div>
+      <p class="project-description">
+        Interactive chatbot application developed using HTML, CSS, and Java.
+        It features conversation simulation and dynamic user interface for enhanced user interaction.
+      </p>
+    </div>
+  </div>
+
+  <div class="project" style="animation-delay: 300ms;">
+    <img src="gym website.png" 
+         alt="Homepage of a gym website illustrating fitness programs and chatbot service integration with a clean modern layout"
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">Gym Website</h2>
+      <div class="project-tech">language used: HTML, CSS, Java, SQL</div>
+      <p class="project-description">
+        Comprehensive gym website showcasing fitness programs, schedules, and integrated chatbot for customer support.
+        Uses HTML, CSS, Java frontend with SQL database backend for managing data.
+      </p>
+    </div>
+  </div>
+
+  <div class="project" style="animation-delay: 450ms;">
+    <img src="AI assistant.png" 
+         alt="Interface of AI Assistant project showing futuristic digital assistant design created with HTML, CSS, and Java"
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">AI Assistant</h2>
+      <div class="project-tech">language used: HTML, CSS, Java</div>
+      <p class="project-description">
+        AI-powered virtual assistant providing voice and text interaction features.
+        Built with web technologies offering intelligent responses and task automation capabilities.
+      </p>
+    </div>
+  </div>
+
+  <div class="project" style="animation-delay: 600ms;">
+    <img src="keylogger.png" 
+         alt="Code editor screen showing python code for keylogger program with black theme and highlighted syntax"
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">Keylogger Project</h2>
+      <div class="project-tech">language used: Python</div>
+      <p class="project-description">
+        A simple keylogger developed using Python and relevant tools to log and monitor keystrokes.
+        Focused on learning about event listening and file handling in Python.
+      </p>
+    </div>
+  </div>
+  
+
+  <div class="project" style="animation-delay: 600ms;">
+    <img src="2k.png" 
+         alt="Code editor screen showing python code for keylogger program with black theme and highlighted syntax"
+         onerror="this.style.display='none'"/>
+    <div class="project-info">
+      <h2 class="project-title">Portfolio</h2>
+      <div class="project-tech">language used: HTML,CSS,JAVA</div>
+      <p class="project-description">
+       Hi, I'm Asgar Abbas, a passionate web developer skilled in front-end technologies. I create clean, responsive websites with a touch of creativity and code.
+      </p>
+    </div>
+  </div>
+
+
+</div>
+
+</body>
+</html>
+
