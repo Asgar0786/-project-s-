@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub - Play 50+ Online Games</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>Game Hub</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">New Games</a></li>
+                    <li><a href="#">Popular</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Play 50+ Exciting Games Online</h1>
+            <p>Discover the best collection of free online games. From action to puzzle games, we have something for everyone!</p>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Search for games...">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <div class="categories">
+            <button class="category-btn active" data-category="all">All Games</button>
+            <button class="category-btn" data-category="action">Action</button>
+            <button class="category-btn" data-category="puzzle">Puzzle</button>
+            <button class="category-btn" data-category="adventure">Adventure</button>
+            <button class="category-btn" data-category="arcade">Arcade</button>
+            <button class="category-btn" data-category="sports">Sports</button>
+            <button class="category-btn" data-category="strategy">Strategy</button>
+        </div>
+
+        <div class="games-grid" id="gamesGrid">
+            <!-- First 6 games hardcoded with theme-based Unsplash images -->
+            <div class="game-card" data-category="action">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?space,shooter" alt="Space Shooter game with colorful spaceships and space background" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Space Blast</h3>
+                    <p class="game-desc">Defeat enemy spaceships and survive as long as possible in this exciting space shooter.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.7</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="puzzle">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?gems,jewels" alt="Colorful gem matching puzzle game with jewels and crystals" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Gem Matcher</h3>
+                    <p class="game-desc">Match colorful gems to complete levels and earn high scores in this addictive puzzle game.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.5</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="sports">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?racing,cars" alt="Sports car racing game with fast cars on a track" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Speed Racer</h3>
+                    <p class="game-desc">Race against opponents in super fast cars and become the champion of the track.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.8</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="action">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?zombie,apocalypse" alt="Zombie shooter game with post-apocalyptic setting" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Zombie Survival</h3>
+                    <p class="game-desc">Survive the zombie apocalypse by shooting zombies and finding resources.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.6</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="sports">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?soccer,football" alt="Soccer game with players on a green field" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Super Soccer</h3>
+                    <p class="game-desc">Score amazing goals and lead your team to victory in this exciting soccer game.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.3</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-card" data-category="adventure">
+                <div class="game-img">
+                    <img src="https://source.unsplash.com/400x300/?dragon,fantasy" alt="Fantasy RPG with knights and dragons" loading="lazy">
+                </div>
+                <div class="game-info">
+                    <h3 class="game-title">Dragon Quest</h3>
+                    <p class="game-desc">Embark on an epic adventure to defeat dragons and save the kingdom.</p>
+                    <div class="game-meta">
+                        <div class="game-rating">
+                            <i class="fas fa-star"></i>
+                            <span>4.9</span>
+                        </div>
+                        <button class="play-btn">Play Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Remaining 44 games will be generated by JavaScript with theme-based images -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="copyright">© 2023 Game Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
