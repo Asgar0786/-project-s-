@@ -1,0 +1,82 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+.brand-name {
+    position: fixed;
+    top: 14px;
+    left: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    z-index: 9999;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+}
+
+
+/* 🔥 Hover animation */
+
+.brand-name:hover {
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.05);
+    text-shadow: 0 0 6px rgba(255, 255, 255, 0.4), 0 0 12px rgba(255, 150, 255, 0.3);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+.vline {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 50vh;
+    width: 2px;
+    background-color: #d0d0d0;
+    z-index: -1;
+    opacity: 0.5;
+    visibility: hidden;
+}
+
+.gsapWrapper {
+    visibility: hidden;
+    #wBody {
+        position: relative;
+        aspect-ratio: 1/1;
+        @media (orientation: landscape) {
+            width: 65vh;
+        }
+        @media (orientation: portrait) {
+            height: 65vw;
+        }
+        #watch {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            aspect-ratio: 1/1;
+            overflow: visible;
+            svg {
+                overflow: visible;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
